@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .navbar {
+    background-color: #5b2c6f; /* Ungu tua */
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .navbar h1 {
+    margin: 0;
+  }
+  
+  .navbar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .navbar nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .navbar nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .register-form {
+    background-color: #f8b400; /* Kuning emas */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .register-form h2 {
+    text-align: center;
+    color: #5b2c6f; /* Ungu tua */
+  }
+  
+  .register-form input[type="text"],
+  .register-form input[type="email"],
+  .register-form input[type="password"],
+  .register-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .register-form input[type="submit"] {
+    background-color: #0aebaf; /* Hijau tosca */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .register-form input[type="submit"]:hover {
+    background-color: #088c66; /* Hijau tosca tua */
+  }
+  
+  .footer {
+    background-color: #5b2c6f; /* Ungu tua */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  

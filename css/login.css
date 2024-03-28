@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .navbar h1 {
+    margin: 0;
+  }
+  
+  .navbar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .navbar nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .navbar nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 160px); /* Sesuaikan dengan tinggi navbar dan footer */
+  }
+  
+  .login-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-box h2 {
+    margin-top: 0;
+  }
+  
+  .login-box form {
+    text-align: center;
+  }
+  
+  .login-box .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .login-box label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .login-box input[type="text"],
+  .login-box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-box input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .login-box input[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  

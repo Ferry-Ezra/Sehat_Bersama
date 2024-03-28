@@ -1,0 +1,52 @@
+/* Basic styling */
+body {
+    font-family: sans-serif; /* Choose a preferred font family */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navigation bar styling */
+  nav {
+    display: flex; /* Arrange elements horizontally */
+    justify-content: space-between; /* Distribute items evenly */
+    align-items: center; /* Align vertically */
+    padding: 10px 20px; /* Add some padding */
+    background-color: #f0f0f0; /* Light gray background */
+  }
+  
+  nav img {
+    width: 10%; /* Adjust width as needed based on your logo size */
+  }
+  
+  nav h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 20px; /* Adjust font size if needed */
+  }
+  
+  nav ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px; /* Add spacing between list items */
+  }
+  
+  nav a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #333; /* Dark gray text color */
+  }
+  
+  nav a:hover {
+    color: #000; /* Black on hover */
+  }
+  
+  /* Paragraph styling */
+  p {
+    text-align: center; /* Center the paragraph text */
+    padding-top: 20px; /* Add some space above the paragraph */
+    font-size: 18px; /* Adjust font size if needed */
+  }
+  
