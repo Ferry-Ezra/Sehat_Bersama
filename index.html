@@ -3,50 +3,6 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/index.css" />
-    <style>
-        /* Carousel */
-        .carousel {
-            position: relative;
-            max-width: 100%;
-            overflow: hidden;
-        }
-
-        .carousel-inner {
-            display: flex;
-            transition: transform 0.5s ease;
-        }
-
-        .carousel-item {
-            flex: 0 0 100%;
-            max-width: 100%;
-        }
-
-        /* Navigation */
-        .carousel-navigation {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            z-index: 10;
-        }
-
-        .carousel-navigation a {
-            color: white;
-            font-size: 30px;
-            text-decoration: none;
-            cursor: pointer;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 10px;
-            border-radius: 50%;
-        }
-
-        .carousel-navigation a:hover {
-            background-color: rgba(0, 0, 0, 0.7);
-        }
-    </style>
     <title>Document</title>
 </head>
 <body>
@@ -57,6 +13,8 @@
             <li><a href="/index.html">Home</a></li>
             <li><a href="/login.html">Login</a></li>
             <li><a href="/register.html">Register</a></li>
+            <!-- Add Logout button -->
+            <li><a href="#" onclick="confirmLogout()">Logout</a></li>
         </ul>
     </nav>
     <p>
@@ -81,6 +39,7 @@
     </div>
     <!-- End Carousel -->
 
+    <!-- Script for logout function and confirmation -->
     <script>
         // Carousel
         var slideIndex = 0;
@@ -103,6 +62,21 @@
         // Next/previous controls
         function plusSlides(n) {
             showSlides(slideIndex += n);
+        }
+
+        // Function to confirm logout
+        function confirmLogout() {
+            if (confirm("Apakah Anda yakin ingin keluar?")) {
+                logout();
+            }
+        }
+
+        // Logout function
+        function logout() {
+            // Your logout logic here
+            alert("You have been logged out.");
+            // Redirect to login page or perform other actions as needed
+            window.location.href = "/login.html";
         }
     </script>
 </body>
