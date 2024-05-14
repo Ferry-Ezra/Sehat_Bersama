@@ -4,15 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">k
 </head>
 <body>
     <nav>
-        <img src="/assets/image/logo.png" alt="logo" width="10%" />
+        <img src="assets/image/logo.png" alt="logo" width="10%" />
         <h1>SEHAT BERSAMA</h1>
         <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/login.html">Login</a></li>
-            <li><a href="/register.html">Register</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="login.php">Login</a></li>
+            <li><a href="register.php">Register</a></li>
             <!-- Add Logout button -->
             <li><a href="#" onclick="confirmLogout()">Logout</a></li>
         </ul>
@@ -25,10 +26,10 @@
     <div class="carousel" id="carousel">
         <div class="carousel-inner">
             <div class="carousel-item">
-                <img src="/index/heart.jpg" alt="slide1" />
+                <img src="index/heart.jpg" alt="slide1" />
             </div>
             <div class="carousel-item">
-                <img src="/assets/image/logo.png" alt="slide2" />
+                <img src="assets/image/logo.png" alt="slide2" />
             </div>
         </div>
         <!-- Navigation -->
@@ -69,14 +70,6 @@
             if (confirm("Apakah Anda yakin ingin keluar?")) {
                 logout();
             }
-        }
-
-        // Logout function
-        function logout() {
-            // Your logout logic here
-            alert("You have been logged out.");
-            // Redirect to login page or perform other actions as needed
-            window.location.href = "/login.html";
         }
     </script>
 </body>

@@ -22,25 +22,25 @@
       </div>
       <ul class="nav-links">
         <li>
-          <a href="/admin.html">
+          <a href="/admin.php">
             <i class="bx bx-grid-alt"></i>
             <span class="links_name">Dashboard</span>
           </a>
         </li>
         <li>
-          <a href="/pasien/pasien.html">
+          <a href="/pasien/pasien.php">
             <i class="bx bx-box"></i>
             <span class="links_name">Pasien</span>
           </a>
         </li>
         <li>
-          <a href="/pembayaran/pembayaran.html" class="active">
+          <a href="/pembayaran/pembayaran.php" class="active">
             <i class="bx bx-list-ul"></i>
             <span class="links_name">Pembayaran</span>
           </a>
         </li>
         <li>
-          <a href="/index.html">
+          <a href="/index.php">
             <i class="bx bx-log-out"></i>
             <span class="links_name">Log out</span>
           </a>

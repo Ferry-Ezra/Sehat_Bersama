@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/css/register.css">
+<link rel="stylesheet" href="css/register.css">
 <title>Register</title>
 </head>
 
@@ -13,9 +13,9 @@
     <h1>Register</h1>
     <nav>
       <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/admin.html">Admin</a></li>
-        <li><a href="/index.html">Contact</a></li>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="admin.php">Admin</a></li>
+        <li><a href="index.php">Contact</a></li>
       </ul>
     </nav>
   </div>
