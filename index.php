@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">k
 </head>
+
 <body>
     <nav>
         <img src="assets/image/logo.png" alt="logo" width="10%" />
@@ -19,7 +21,10 @@
         </ul>
     </nav>
     <p>
-        "Sehat Bersama" adalah sebuah aplikasi platform layanan kesehatan yang telah dibuat untuk memberikan solusi terintegrasi bagi pengguna dalam mengelola kesehatan mereka. Aplikasi ini menawarkan berbagai fitur dan layanan yang dirancang untuk memudahkan pengguna dalam mendapatkan perawatan kesehatan yang mereka butuhkan, di mana pun dan kapan pun.
+        "Sehat Bersama" adalah sebuah aplikasi platform layanan kesehatan yang telah dibuat untuk memberikan solusi
+        terintegrasi bagi pengguna dalam mengelola kesehatan mereka. Aplikasi ini menawarkan berbagai fitur dan layanan
+        yang dirancang untuk memudahkan pengguna dalam mendapatkan perawatan kesehatan yang mereka butuhkan, di mana pun
+        dan kapan pun.
     </p>
     <h2 style="text-align: center">SEHAT BERSAMA</h2>
     <!-- Carousel -->
@@ -73,4 +78,5 @@
         }
     </script>
 </body>
+
 </html>

@@ -1,4 +1,28 @@
 <?php
+include '../koneksi.php'; // Menghubungkan ke database
+
+if (isset($_GET['id'])) {
+    $id_pasien = $_GET['id'];
+
+    // Query untuk mendapatkan data pasien berdasarkan ID
+    $sql = "SELECT * FROM tb_pasien WHERE ID_pasien = $id_pasien";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        $row = $result->fetch_assoc();
+    } else {
+        echo "<script>alert('Data tidak ditemukan'); window.location = 'pasien.php';</script>";
+        exit();
+    }
+} else {
+    echo "<script>alert('ID tidak ditemukan'); window.location = 'pasien.php';</script>";
+    exit();
+}
+
+$conn->close();
+?>
+
+<?php
 session_start();
 if (!isset($_SESSION['username']) || $_SESSION['username'] == null) {
     header('Location: login.php');
@@ -64,24 +88,28 @@ if (!isset($_SESSION['username']) || $_SESSION['username'] == null) {
         <!-- end -->
 
         <div class="home-content">
-            <h3>Tambah Data Pasien</h3>
+            <h3>Edit Data Pasien</h3>
             <div class="form-login">
-                <form action="pasien-proses.php" method="post">
+                <form action="pasien-update.php" method="post">
+                    <input type="hidden" name="id_pasien" value="<?php echo $row['ID_pasien']; ?>" />
                     <label for="nama">Nama</label>
-                    <input class="input" type="text" name="nama" id="nama" required />
-
+                    <input class="input" type="text" name="nama" id="nama" value="<?php echo $row['Nama']; ?>"
+                        required />
                     <label for="tanggal_lahir">Tanggal Lahir</label>
-                    <input class="input" type="date" name="tanggal_lahir" id="tanggal_lahir" required />
-
+                    <input class="input" type="date" name="tanggal_lahir" id="tanggal_lahir"
+                        value="<?php echo $row['Tanggal_lahir']; ?>" required />
                     <label for="alamat">Alamat</label>
-                    <input class="input" type="text" name="alamat" id="alamat" required />
-
+                    <input class="input" type="text" name="alamat" id="alamat" value="<?php echo $row['Alamat']; ?>"
+                        required />
                     <label for="jenis_kelamin">Jenis Kelamin</label>
                     <select class="input" name="jenis_kelamin" id="jenis_kelamin" required>
-                        <option value="Laki-laki">Laki-laki</option>
-                        <option value="Perempuan">Perempuan</option>
+                        <option value="Laki-laki" <?php if ($row['Jenis_kelamin'] == 'Laki-laki')
+                            echo 'selected'; ?>>
+                            Laki-laki</option>
+                        <option value="Perempuan" <?php if ($row['Jenis_kelamin'] == 'Perempuan')
+                            echo 'selected'; ?>>
+                            Perempuan</option>
                     </select>
-
                     <button type="submit" class="btn btn-simpan" name="submit">Simpan</button>
                 </form>
             </div>
